@@ -79,17 +79,37 @@ console.log("EXERCISE 3:\n==========\n");
 
 console.log("EXERCISE 4:\n==========\n");
 
-let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
-let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
+// let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
+// let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
 
-for (let value = 0; value <= n; value++) {
-    if (value !== n) {
-        console.log("Did not find value");
-        console.log(n);
-        console.log(value);
-    } else if (value === n) {
-        console.log("Found value!");
-        console.log(value);
-    }
+// for (let value = 0; value <= n; value++) {
+//     if (value !== n) {
+//        console.log("Did not find value");
+//        console.log(n);
+//        console.log(value);
+//     } else if (value === n) {
+//        console.log("Found value!");
+//        console.log(value);
+//        break;
+//     }
     
+// }
+
+console.log("EXERCISE 5:\n==========\n");
+
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let n = Math.round(Math.random() * (1000 - 1) + 1);
+let start = Math.round(Math.random() * (10 - 1) + 1);
+
+for (let i = start; i <= n; i++) {
+    if (i % fizzDivisor === 0 && i % buzzDivisor === 0) {
+        console.log("fizzbuzz")
+    } else if (i % buzzDivisor === 0) {
+        console.log("buzz");
+    } else if (i % fizzDivisor === 0) {
+        console.log("fizz");
+    } else {
+        console.log(i);
+    }
 }
