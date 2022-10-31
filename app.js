@@ -61,6 +61,7 @@ console.log("EXERCISE 3:\n==========\n");
 //     counter++
 // }
 
+
 // let counter = 1
 
 // do {
@@ -75,3 +76,20 @@ console.log("EXERCISE 3:\n==========\n");
 //     }
 //     counter++
 // } while (counter <= 100);
+
+console.log("EXERCISE 4:\n==========\n");
+
+let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
+let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
+
+for (let value = 0; value <= n; value++) {
+    if (value !== n) {
+        console.log("Did not find value");
+        console.log(n);
+        console.log(value);
+    } else if (value === n) {
+        console.log("Found value!");
+        console.log(value);
+    }
+    
+}
